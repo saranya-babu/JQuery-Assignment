@@ -3,7 +3,6 @@ $(document).ready(function(){
 	var $addYear=$('#addYear');
 	var $addVal=$('#addVal');
 	graph();
-	jQuery.support.cors=true;
 
 	 $.ajax({
 	 	type:'get',
