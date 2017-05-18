@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table using Jquery</title>
+
+
+</head>
+
+<body>
+<h1>Agriculure production for different FoodGrains 2013-2014</h1>
+
+<div class="container ">
+  <div class="row">
+    <div class="col-lg-3">
+      <table id="values" border="1" class="table table-striped ">
+        <tr>
+          <th>Year</th>
+          <th>Aggregate value</th>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="col-lg-9 add" id="addGraph"></div>
+ </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12" id="addItem">
+    <table>
+         <h4>Add New items</h4>
+          <tr><td>Year:</td><td> <input type="text" id="addYear"  /></td></tr>
+          <tr><td>Aggregate Value: </td><td><input type="text" id="addVal" /></td></tr>
+          <tr><td colspan="2"><button type="button" class="btn btn-primary" id="btn-add" >Add</button></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+ <script src="tooltip.js"></script>
+ <script type="text/javascript" src="index.js"></script>
+<script src="commercialGraph.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</body>
+</html>
