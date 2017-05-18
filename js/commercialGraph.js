@@ -1,5 +1,5 @@
 var margin = {top: 40, right: 50, bottom: 30, left: 70},
-    width = 960 - margin.left - margin.right,
+    width = 890 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var formatPercent = d3.format(".0%");
@@ -49,7 +49,8 @@ d3.json("http://localhost:3000/name", function(error, data) {
       .attr("transform", "translate(" + width + ",0)")
       .attr("dy","0.9em")
       .attr("dx","0.5em")
-      .style("font-size","15px")
+      .style("font-size","16px")
+      .style("font-weight","bold")
       .style("color","black")
       .text("Year");
     
@@ -59,10 +60,12 @@ d3.json("http://localhost:3000/name", function(error, data) {
       .call(yAxis)
       .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("x", -200)
+      .attr("x", -140)
       .attr("y", -40)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
+      .style("font-size","16px")
+      .style("font-weight","bold")
       .text("Production in Ton mn");
 
   svg.selectAll(".bar")
